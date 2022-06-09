@@ -10,3 +10,23 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+#wrappingBox{
+    background-color: black;
+    display: flex;
+    color: white;
+    font-size: 200px;
+    justify-content: space-evenly;
+    margin-top: 300px;
+}
+
+.box{
+    
+    width: 200px;
+    height: 220px;
+    display: inline-flex;
+    align-items: center;
+    margin:30px;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px white;
+  
+}

@@ -9,4 +9,17 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let counter = 0;
+setInterval(() => {
+	ReactDOM.render(
+		<Home
+			number5={Math.floor((counter / 10000) % 10)}
+			number4={Math.floor((counter / 1000) % 10)}
+			number3={Math.floor((counter / 100) % 10)}
+			number2={Math.floor((counter / 10) % 10)}
+			number1={Math.floor((counter / 1) % 10)}
+		/>,
+		document.querySelector("#app")
+	);
+	counter++;
+}, 1000);
